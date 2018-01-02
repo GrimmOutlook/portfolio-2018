@@ -1,0 +1,17 @@
+.top-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      ""
+      ""
+      "";
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      ""
+      ""
+      "";
+}
