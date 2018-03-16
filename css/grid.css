@@ -15,3 +15,23 @@
       ""
       "";
 }
+
+.travel-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "screenshot summary"
+    "screenshot tech-stack";
+}
+
+.tgp-image {
+  grid-area: screenshot;
+}
+
+.summary-travel {
+  grid-area: summary-travel;
+}
+
+.stack-travel {
+  grid-area: tech-stack;
+}
