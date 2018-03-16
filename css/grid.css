@@ -16,9 +16,9 @@
       "";
 }
 
-.travel-grid {
+.section-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
   grid-template-areas:
     "screenshot summary"
     "screenshot tech-stack";
@@ -29,9 +29,21 @@
 }
 
 .summary-travel {
-  grid-area: summary-travel;
+  grid-area: summary;
 }
 
 .stack-travel {
+  grid-area: tech-stack;
+}
+
+.whiskey-image {
+  grid-area: screenshot;
+}
+
+.summary-whiskey {
+  grid-area: summary;
+}
+
+.stack-whiskey {
   grid-area: tech-stack;
 }
