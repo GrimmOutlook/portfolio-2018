@@ -47,3 +47,15 @@
 .stack-whiskey {
   grid-area: tech-stack;
 }
+
+.nfl-image {
+  grid-area: screenshot;
+}
+
+.summary-player {
+  grid-area: summary;
+}
+
+.stack-player {
+  grid-area: tech-stack;
+}
