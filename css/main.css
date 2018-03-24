@@ -1,3 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  /*font-family: 'Lato', sans-serif;*/
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
 img.tgp-image, img.whiskey-image, img.nfl-image {
   max-width: 100%;
+}
+
+.heading-primary {
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  text-transform: uppercase;
+  letter-spacing: 0.375rem;
+  color: #55b1c5;
 }
