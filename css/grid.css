@@ -18,10 +18,16 @@
 
 .section-grid {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr;
   grid-template-areas:
-    "screenshot summary"
-    "screenshot tech-stack";
+    "title"
+    "screenshot"
+    "summary"
+    "tech-stack";
+}
+
+.title {
+  grid-area: title;
 }
 
 .tgp-image {
@@ -59,3 +65,30 @@
 .stack-player {
   grid-area: tech-stack;
 }
+
+/*@media only screen and (min-width: 640px) and (orientation: landscape) {
+  .section-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "screenshot"
+      "summary"
+      "tech-stack";
+  }
+}*/
+
+@media screen and (min-width: 640px) {
+  .section-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+      "title title"
+      "screenshot tech-stack"
+      "summary links";
+  }
+
+  .code-links {
+    grid-area: links;
+  }
+}
+
