@@ -17,42 +17,41 @@ ul {
   list-style-type: none;
 }
 
-/*.very-top {
-  display: flex;
-  flex-wrap: wrap;
-}*/
-
-.headshot-image {
-  display: block;
-  max-width: 5.5rem;
-  margin: 0.5rem auto 0;
-  border-radius: 40%;
-}
-
-img.tgp-image, img.whiskey-image, img.nfl-image {
-  max-width: 90%;
-  margin: 0 auto;
-}
-
 .heading-primary {
   /*writing-mode: vertical-lr;
   text-orientation: upright;*/
+  font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: 0.375rem;
   color: black;
   text-align: center;
-  margin: 0.75rem auto 0.1rem;
+  margin: 0.75rem auto 0;
 }
 
 .heading-title {
+  font-size: 1.5rem;
   color: black;
   text-align: center;
-  margin-bottom: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.heading-photo-bio {
+  display: flex;
+}
+
+.headshot-image {
+  /*display: block;*/
+  max-width: 7.5rem;
+  max-height: 7.5rem;
+  margin: 0.25rem 0.5rem 0.5rem;
+  border-radius: 50%;
+  /*shape-outside: circle(1400px);  WTF doesn't this work?????? */
 }
 
 .heading-primary-bio {
   font-size: 1.25rem;
   margin: 0 0.75rem;
+  align-self: center;
 }
 
 .project-label {
@@ -94,18 +93,23 @@ img.tgp-image, img.whiskey-image, img.nfl-image {
 }
 
 .title {
-  font-size: 1.6rem;
+  font-size: 1.75rem;
   margin: 0 auto 0.5rem;
+}
+
+img.tgp-image, img.whiskey-image, img.nfl-image {
+  max-width: 90%;
+  margin: 0 auto;
 }
 
 .summary {
   padding: 0.25rem 1rem;
-  font-size: 1.6rem;
+  font-size: 1.25rem;
 }
 
 .stack {
   margin: 0.5rem auto;
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 
 .label-stack {
@@ -118,13 +122,13 @@ a.btn {
   text-transform: uppercase;
   text-align: center;
   display: block;
-  width: 60%;
+  width: 48%;
   margin: .5rem auto;
   color: white;
   border: 0;
   border-radius: 10rem;
   padding: 1rem 2.5rem;
-  font-size: 1.6rem;
+  font-size: 1.25rem;
 }
 
 a.link-demo-tgp {
@@ -133,7 +137,7 @@ a.link-demo-tgp {
 
 a.link-code-react {
   background: var(--blue);
-  width: 80%;
+  width: 61%;
 }
 
 a.link-code-api-tgp {
@@ -161,16 +165,16 @@ a.link-code-nfl {
 
 .border-between {
   border: 2px solid gray;
-  margin: 1em auto;
+  margin: 1rem auto;
   width: 75%;
   /*text-align: center;*/
 }
 
 @media screen and (min-width: 640px) {
   .headshot-image {
-    max-width: 8.5rem;
-    margin: 0.5rem auto 0;
-    border-radius: 40%;
+    max-width: 12rem;
+    max-height: 12rem;
+    border-radius: 10rem;
   }
 
   .heading-primary {
@@ -188,21 +192,22 @@ a.link-code-nfl {
 
   .summary {
     padding: 1.25rem 1rem;
-    font-size: 1.6rem;
+    font-size: 1.25rem;
+    max-width: 80%;
   }
 
   .stack {
     margin: 0.5rem auto;
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
 
   a.btn {
-    width: 55%;
+    width: 35%;
   }
 }
 
 @media only screen and (min-width: 640px) and (orientation: landscape) {
   a.btn {
-    width: 80%;
+    width: 60%;
   }
 }

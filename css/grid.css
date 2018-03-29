@@ -25,27 +25,11 @@
   grid-area: screenshot;
 }
 
-.summary-travel {
+.summary {
   grid-area: summary;
 }
 
-.stack-travel {
-  grid-area: tech-stack;
-}
-
-.summary-whiskey {
-  grid-area: summary;
-}
-
-.stack-whiskey {
-  grid-area: tech-stack;
-}
-
-.summary-player {
-  grid-area: summary;
-}
-
-.stack-player {
+.stack {
   grid-area: tech-stack;
 }
 
@@ -72,6 +56,10 @@
       "title title"
       "screenshot tech-stack"
       "summary links";
+  }
+
+  .summary {
+    justify-self: center;
   }
 
   .code-links {
