@@ -200,3 +200,9 @@ a.link-code-nfl {
     width: 55%;
   }
 }
+
+@media only screen and (min-width: 640px) and (orientation: landscape) {
+  a.btn {
+    width: 80%;
+  }
+}
