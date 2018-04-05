@@ -55,8 +55,9 @@ ul {
 }
 
 .project-label {
-  margin: 0 0 0.5rem 0.5rem;
-  font-size: 1.6rem;
+  margin: 0 auto 1.5rem;
+  font-size: 2rem;
+  text-align: center;
 }
 
 .link-list {
@@ -93,13 +94,16 @@ ul {
 }
 
 .title {
-  font-size: 1.75rem;
+  font-size: 1.6rem;
   margin: 0 auto 0.5rem;
 }
 
 img.tgp-image, img.whiskey-image, img.nfl-image {
   max-width: 90%;
   margin: 0 auto;
+}
+
+.code-links {
 }
 
 .summary {
@@ -110,6 +114,8 @@ img.tgp-image, img.whiskey-image, img.nfl-image {
 .stack {
   margin: 0.5rem auto;
   font-size: 1rem;
+  font-size: 1.25rem;
+  max-width: 75%;
 }
 
 .label-stack {
@@ -132,35 +138,40 @@ a.btn {
 }
 
 a.link-demo-tgp {
-  background: var(--green);
+  background: black;
 }
 
 a.link-code-react {
-  background: var(--blue);
+  background: white;
+  border: 1px solid black;
+  color: black;
   width: 61%;
 }
 
 a.link-code-api-tgp {
-  background: var(--blue);
+  background: white;
+  border: 1px solid black;
+  color: black;
 }
 
 a.link-demo-whiskey {
-  background: var(--whiskey-red);
+  background: black;
 }
 
 a.link-code-whiskey {
-  background: var(--whiskey-orange);
-  color: var(--whiskey-red);
+  background: white;
+  border: 1px solid black;
+  color: black;
 }
 
 a.link-demo-nfl {
-  background: var(--nfl-green);
+  background: black;
 }
 
 a.link-code-nfl {
   background: white;
-  border: 1px solid var(--nfl-green);
-  color: var(--nfl-green);
+  border: 1px solid black;
+  color: black;
 }
 
 .border-between {
@@ -186,19 +197,39 @@ a.link-code-nfl {
   }
 
   .title {
-    font-size: 2.5rem;
+    font-size: 1.6rem;
     margin: 0 auto 0.5rem;
+  }
+
+  img.tgp-image, img.whiskey-image, img.nfl-image {
+    max-width: 70%;
   }
 
   .summary {
     padding: 1.25rem 1rem;
     font-size: 1.25rem;
-    max-width: 80%;
+    max-width: 60%;
   }
 
   .stack {
-    margin: 0.5rem auto;
-    font-size: 1rem;
+    padding: 1.25rem 1rem;
+    /*margin: 0.5rem auto;*/
+    font-size: 1.25rem;
+    max-width: 45%;
+  }
+
+  .code-links {
+    display: flex;
+    justify-content: center;
+    margin: 0 10% 0;
+  }
+
+  .code-links-tgp {
+    margin: 0 10% 0;
+  }
+
+  .code-links-tgp a.btn {
+    width: 25%;
   }
 
   a.btn {
@@ -212,6 +243,6 @@ a.link-code-nfl {
   }
 
   a.btn {
-    width: 60%;
+    width: 20%;
   }
 }
